@@ -16,6 +16,8 @@ Scenario Outline: Calculate the Duty Charges for the Domestic Electricity Consum
 
 	Examples:
 		| units | slabdutycharges | fcadutycharges | totaldutycharges |
+		| 0     | 0               | 0              | 0                |
+		| 1     | 0.09            | 0.012          | 0.102            |
 		| 40    | 3.60            | 0.468          | 4.068            |
 		| 95    | 9.90            | 1.287          | 11.187           |
 		| 250   | 28.50           | 3.705          | 32.205           |

@@ -136,6 +136,26 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Calculate the Duty Charges for the Domestic Electricity Consumer in all 4 Slabs f" +
+            "or consumption1, 0", new string[] {
+                "mytag"}, SourceLine=18)]
+        public virtual void CalculateTheDutyChargesForTheDomesticElectricityConsumerInAll4SlabsForConsumption1_0()
+        {
+#line 10
+this.CalculateTheDutyChargesForTheDomesticElectricityConsumerInAll4SlabsForConsumption1("0", "0", "0", "0", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Calculate the Duty Charges for the Domestic Electricity Consumer in all 4 Slabs f" +
+            "or consumption1, 1", new string[] {
+                "mytag"}, SourceLine=18)]
+        public virtual void CalculateTheDutyChargesForTheDomesticElectricityConsumerInAll4SlabsForConsumption1_1()
+        {
+#line 10
+this.CalculateTheDutyChargesForTheDomesticElectricityConsumerInAll4SlabsForConsumption1("1", "0.09", "0.012", "0.102", ((string[])(null)));
+#line hidden
+        }
+        
+        [TechTalk.SpecRun.ScenarioAttribute("Calculate the Duty Charges for the Domestic Electricity Consumer in all 4 Slabs f" +
             "or consumption1, 40", new string[] {
                 "mytag"}, SourceLine=18)]
         public virtual void CalculateTheDutyChargesForTheDomesticElectricityConsumerInAll4SlabsForConsumption1_40()

@@ -28,7 +28,7 @@ namespace BDDElectricityBillKata.StepDefinitions
         public void WhenTheStateXOZElectricityBillGetsGenerated()
         {
             expectedresult = JsonConvert.DeserializeObject<FCAChargesBilled>(apiResponse);
-            fcachargestotal = expectedresult.fcachargestotal;
+            fcachargestotal = expectedresult.FcaChargesTotal;
         } 
         [Then(@"the total fca charges as fca amounted to Rs(.*)")]
         public void ThenTheTotalFcaChargesAsFcaAmountedToRs(Decimal p0)
@@ -45,19 +45,19 @@ namespace BDDElectricityBillKata.StepDefinitions
             {
                 case 1:
                     //returnvalue = charges.Equals(expectedresult.Slab1Charges);
-                    SlabCharges = expectedresult.Slab1Charges;
+                    SlabCharges = expectedresult.Slab1FcaCharges;
                     break;
                 case 2:
                     //returnvalue = charges.Equals(expectedresult.Slab2Charges);
-                    SlabCharges = expectedresult.Slab2Charges;
+                    SlabCharges = expectedresult.Slab2FcaCharges;
                     break;
                 case 3:
                     //returnvalue = charges.Equals(expectedresult.Slab3Charges);
-                    SlabCharges = expectedresult.Slab3Charges;
+                    SlabCharges = expectedresult.Slab3FcaCharges;
                     break;
                 case 4:
                     //returnvalue = charges.Equals(expectedresult.Slab4Charges);
-                    SlabCharges = expectedresult.Slab4Charges;
+                    SlabCharges = expectedresult.Slab4FcaCharges;
                     break;
             }
             Assert.AreEqual(SlabCharges, charges);

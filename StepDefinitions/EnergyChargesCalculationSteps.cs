@@ -40,26 +40,25 @@ namespace BDDElectricityBillKata.StepDefinitions
         [Then(@"I should be charged with an amount of Rs(.*) for Slab (.*)")]
         public void ThenIShouldBeChargedWithAnAmountOfRsForSlab(Decimal charges, int slab)
         {
-
             //bool returnvalue = false;
 
             switch (slab)
             {
                 case 1:
                     //returnvalue = charges.Equals(expectedresult.Slab1Charges);
-                    SlabCharges = expectedresult.Slab1Charges;
+                    SlabCharges = expectedresult.Slab1EnergyCharges;
                     break;
                 case 2:
                     //returnvalue = charges.Equals(expectedresult.Slab2Charges);
-                    SlabCharges = expectedresult.Slab2Charges;
+                    SlabCharges = expectedresult.Slab2EnergyCharges;
                     break;
                 case 3:
                     //returnvalue = charges.Equals(expectedresult.Slab3Charges);
-                    SlabCharges = expectedresult.Slab3Charges;
+                    SlabCharges = expectedresult.Slab3EnergyCharges;
                     break;
                 case 4:
                     //returnvalue = charges.Equals(expectedresult.Slab4Charges);
-                    SlabCharges = expectedresult.Slab4Charges;
+                    SlabCharges = expectedresult.Slab4EnergyCharges;
                     break;
             }
             Assert.AreEqual(SlabCharges,charges);

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace BDDElectricityBillKata.Common
 {
@@ -28,5 +29,26 @@ namespace BDDElectricityBillKata.Common
             }
             return apiResponse;
         }
+
+
+        //public async Task CallWebApi(string parameters)
+        //{
+        //    EnergyChargesBilled model = new EnergyChargesBilled();
+        //    using (var client = new HttpClient())
+        //    using (var request = new HttpRequestMessage(HttpMethod.Post, webapi))
+        //    {
+        //        var json = JsonConvert.SerializeObject(model);
+        //        using (var stringContent = new StringContent(json, Encoding.UTF8, "application/json"))
+        //        {
+        //            request.Content = stringContent;
+        //            using (var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
+        //            {
+        //                response.EnsureSuccessStatusCode();
+        //                //log.Error("Create response: " + response);
+        //            }
+        //        }
+        //    }
+        //    return response;
+        //}
     }
 }

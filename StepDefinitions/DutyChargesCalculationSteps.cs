@@ -29,9 +29,9 @@ namespace BDDElectricityBillKata.StepDefinitions
         public void WhenTheStateABCElectricityBillGenerated()
         {
             expectedresult = JsonConvert.DeserializeObject<DutyChargesBilled>(apiResponse);
-            totaldutycharges = expectedresult.totaldutycharges;
-            slabdutycharges = expectedresult.slabdutycharges;
-            fcadutycharges = expectedresult.fcadutycharges;
+            totaldutycharges = expectedresult.TotalDutyCharges;
+            slabdutycharges = expectedresult.SlabDutyCharges;
+            fcadutycharges = expectedresult.FcaDutyCharges;
         }
 
         [Then(@"the slabwise duty charges amounted to Rs (.*)")]
